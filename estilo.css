@@ -1,0 +1,79 @@
+* {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box; */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+.titulo {
+    font-size: 2rem;
+    width: 16rem;
+    margin: 1rem auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    width: 15rem;
+    box-shadow: 0 .5rem .7rem .01rem rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card-img {
+    width: 15rem;
+    border-radius: 4px;
+}
+
+.painel {
+    width: 30rem;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.painel-img {
+    width: 30rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #f0f0f0;
+    color: #555;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
