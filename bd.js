@@ -22,7 +22,7 @@ const dados = [
       "categoria": "Tecnologia",
       "autor": "Carlos Mendes",
       "data": "2025-03-28",
-      "imagem": "img/tecnologia_6g.png"
+      "imagem": "img/tecnologia-6g.png"
     },
     {
       "id": 3,
@@ -32,6 +32,6 @@ const dados = [
       "categoria": "Cultura",
       "autor": "Ana Clara Silva",
       "data": "2025-03-27",
-      "imagem": "img/festival_musica.png"
+      "imagem": "img/festival-musica.png"
     }
   ];
