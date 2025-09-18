@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
     <script src="bd.js"></script>
     <script src="login.js"></script>
 </head>
 <body>
-    <form>
-        <input type="text" placeholder="informe seu e-mail" id="email">
-        <input type="password" placeholder="informe sua senha" id="senha">
-        <button onclick="verificarLogin(); return false;">Entrar</button>
-    </form>
+    <div class="container">
+        <form class="card">
+            <input type="text" placeholder="informe seu e-mail" id="email">
+            <input type="password" placeholder="informe sua senha" id="senha">
+            <button onclick="verificarLogin(); return false;">Entrar</button>
+        </form>
+    </div>
 </body>
 </html>
