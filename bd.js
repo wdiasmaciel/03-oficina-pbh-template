@@ -1,5 +1,5 @@
 const usuario = {
-    "e-mail": "admin@email.com",
+    "email": "admin@email.com",
     "senha": "admin"
 }
 

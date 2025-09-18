@@ -1,5 +1,7 @@
-const email = usuario.email;
-const senha = usuario.senha;
+//import { usuario } from "bd.js";
+
+email = usuario.email;
+senha = usuario.senha;
 
 function verificarLogin() {
     const emailInformado = document.getElementById("email").value;
