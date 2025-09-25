@@ -14,7 +14,7 @@
         <h1 class="titulo">Meu Site</h1>
     </header>
     <main>
-        <div id="detalhe" class="painel"></div>
+        <div id="painel-de-detalhe" class="painel"></div>
 
         <script src="./asset/js/bd.js"></script>
 
@@ -23,7 +23,7 @@
             const id = parseInt(params.get('id'));
             const noticia = dados.find(item => item.id === id);
 
-            const container = document.getElementById('detalhe');
+            const container = document.getElementById('painel-de-detalhe');
             if (noticia) {
                 container.innerHTML = `
                     <h1>${noticia.titulo}</h1>

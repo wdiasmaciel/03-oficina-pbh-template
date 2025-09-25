@@ -85,6 +85,10 @@ nav {
     background-color: #eee;
 }
 
+.menu-oculto {
+    display: none;
+}
+
 .menu-lateral {
     /* border: .1rem solid blue; */
 }
@@ -164,7 +168,8 @@ main {
 .imagem {
     max-width: 100%;
     height: auto;
-    aspect-ratio: 2/1.2; /* Definição de uma relação largura-altura para a caixa de um elemento.*/
+    aspect-ratio: 2/1.2;
+    /* Definição de uma relação largura-altura para a caixa de um elemento.*/
     object-fit: cover;
 }
 
@@ -205,7 +210,7 @@ main {
 }
 
 .botao-cartao:hover {
-    color:white;
+    color: white;
     background-color: #0202c2;
     /* font-weight: bold; */
 }
@@ -225,6 +230,13 @@ footer {
 
     nav {
         display: none;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 }
 

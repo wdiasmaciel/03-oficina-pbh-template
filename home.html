@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/b581796bdd.js" crossorigin="anonymous"></script>
 
     <script src="./asset/js/bd.js"></script>
+    <script src="./asset/js/menu-hamburguer.js"></script>
     <script src="./asset/js/noticia.js"></script>
 </head>
 
@@ -17,12 +18,12 @@
     <header>
         <div class="logo">W</div>
         <h1 class="titulo">Meu Site</h1>
-        <div class="menu-hamburguer">
+        <div class="menu-hamburguer" onclick="alternarVisualizacaoMenu()">
             <i class="fa-solid fa-bars"></i>
         </div>
     </header>
     <section>
-        <nav>
+        <nav id="menu">
             <ul class="menu-lateral">
                 <li onclick="lerNoticias();">
                     <a href="#">
