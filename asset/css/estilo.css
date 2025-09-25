@@ -164,7 +164,7 @@ main {
 .imagem {
     max-width: 100%;
     height: auto;
-    aspect-ratio: 2/1.2;
+    aspect-ratio: 2/1.2; /* Definição de uma relação largura-altura para a caixa de um elemento.*/
     object-fit: cover;
 }
 
