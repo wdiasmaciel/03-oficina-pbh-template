@@ -207,7 +207,7 @@ main {
 .botao-cartao:hover {
     color:white;
     background-color: #0202c2;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 footer {
