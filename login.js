@@ -1,7 +1,7 @@
 email = usuario.email;
 senha = usuario.senha;
 
-function verificarLogin() {
+function verificarCredenciais() {
     const emailInformado = document.getElementById("email").value;
     const senhaInformada = document.getElementById("senha").value;
 

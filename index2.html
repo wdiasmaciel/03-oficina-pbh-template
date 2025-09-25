@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Formulário</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-3">
+  <h3>Lorem</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    
+  <form action="https://www.google.com.br" class="was-validated">
+    <div class="mb-3 mt-3">
+      <label for="nome" class="form-label">Nome:</label>
+      <input type="text" class="form-control" id="nome" placeholder="Informe o nome" name="nome_usuario" required>
+      <div class="valid-feedback">Nome informado corretamente.</div>
+      <div class="invalid-feedback">Por favor, preencha o compo 'nome'.</div>
+    </div>
+    <div class="mb-3">
+      <label for="senha" class="form-label">Senha</label>
+      <input type="password" class="form-control" id="senha" placeholder="Informe a senha" name="senha_usuario" required>
+      <div class="valid-feedback">Senha informada corretamente.</div>
+      <div class="invalid-feedback">Por favor, preencha o compo 'senha'.</div>
+    </div>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="confirmacao"  name="confirmacao_usuario" required>
+      <label class="form-check-label" for="confirmacao">Aceito.</label>
+      <div class="valid-feedback">Confirmação preenchida.</div>
+      <div class="invalid-feedback">É necessário confirmar a aceitação dos termos.</div>
+    </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
