@@ -1,13 +1,24 @@
+let noticiasCarregadas = false;
+
 function lerNoticias() {
-    const container = document.getElementById("container");
+  if (!noticiasCarregadas) {
+    carregarNoticias();
+    noticiasCarregadas = true;
+  } else {
     container.innerHTML = "";
-    
-    dados.forEach(item => {
-        const cartao = document.createElement("div");
+    noticiasCarregadas = false;
+  }
+}
 
-        cartao.className = "cartao";
+function carregarNoticias() {
+  const container = document.getElementById("container");
 
-        cartao.innerHTML = `
+  dados.forEach(item => {
+    const cartao = document.createElement("div");
+
+    cartao.className = "cartao";
+
+    cartao.innerHTML = `
            <img src="${item.imagem}" alt="${item.titulo}" class="imagem">
            <section class="corpo-cartao">
              <h2 class="titulo-noticia-cartao">${item.titulo}</h2>
@@ -17,7 +28,7 @@ function lerNoticias() {
            </section>
            <a class="botao-cartao" href="./detalhe.html?id=${item.id}">Leia mais</a>
         `;
-        
-         container.appendChild(cartao);
-    }); 
+
+    container.appendChild(cartao);
+  });
 }
