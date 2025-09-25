@@ -83,10 +83,17 @@ nav {
     width: 12rem;
     padding: .5rem;
     background-color: #eee;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .menu-oculto {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+    /* impede clique quando invisível */
 }
 
 .menu-lateral {
