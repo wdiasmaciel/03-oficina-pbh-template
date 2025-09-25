@@ -150,33 +150,50 @@ main {
     border: .1rem solid #ddd;
     box-shadow: .3rem .3rem .3rem .01rem #eee;
     width: 12rem;
-    height: 20.5rem;
+    height: 24rem;
     padding: .5rem;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
+/*
+* Vídeo sobre responsividade de imagens:
+* https://www.youtube.com/watch?v=2IV08sP9m3U
+*/
 .imagem {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 2/1.2;
+    object-fit: cover;
 }
 
-.nome-produto {
-    font-size: 1.5rem;
+.corpo-cartao {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1; */
+    justify-content: space-between;
+    border: .1rem solid red;
     margin-top: .5rem;
 }
 
-.descricao {
+.titulo-noticia-cartao {
+    font-size: 1rem;
+}
+
+.descricao-noticia-cartao {
     margin-top: .5rem;
 }
 
-.preco {
+.autor-noticia-cartao {
     margin-top: .5rem;
     text-align: right;
     color: green;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
-button {
+.botao-cartao {
     width: 100%;
     margin-top: .8rem;
     padding: .5rem;
@@ -186,7 +203,7 @@ button {
     border: none;
 }
 
-button:hover {
+.botao-cartao:hover {
     color:white;
     background-color: #0202c2;
     font-weight: bold;

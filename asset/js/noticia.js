@@ -5,15 +5,17 @@ function lerNoticias() {
     dados.forEach(item => {
         const cartao = document.createElement("div");
 
-        cartao.className = "card";
+        cartao.className = "cartao";
 
         cartao.innerHTML = `
            <img src="${item.imagem}" alt="${item.titulo}" class="imagem">
-           <h2>${item.titulo}</h2>
-           <p>${item.categoria} - ${item.data}</p>
-           <p>${item.descricao}</p>
-           <p>${item.autor}</p>
-           <a href="detalhe.html?id=${item.id}">Leia mais</a>
+           <section class="corpo-cartao">
+             <h2 class="titulo-noticia-cartao">${item.titulo}</h2>
+             <p>${item.categoria} - ${item.data}</p>
+             <p class="descricao-noticia-cartao">${item.descricao}</p>
+             <p class="autor-noticia-cartao">${item.autor}</p>
+           </section>
+           <a class="botao-cartao" href="detalhe.html?id=${item.id}">Leia mais</a>
         `;
         
          container.appendChild(cartao);
